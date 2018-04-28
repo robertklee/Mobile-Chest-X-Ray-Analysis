@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/toolbar" />
+
+    <!-- start Results views -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/condition_list_secondary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/results_condition_result_height_large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/img_xray"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="@dimen/results_condition_result_height_large_with_border"
+        android:scrollbars="none"
+        android:background="@color/white"/>
+
+    <!-- end Results views -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/condition_list_primary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/img_xray"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/layout_see_more_hide"
+        android:scrollbars="none"
+        android:background="@color/white"/>
+
+    <XRayAnalysis.Droid.Results.XRayDisplayView
+        android:id="@+id/img_xray"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/condition_list_primary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/black_bar_top"
+        android:background="@color/black"
+        app:filename_label="@string/see_all_image_label_original"
+        app:label_display_mode="small" />
+
+    <View
+        android:id="@+id/black_bar_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/see_more_bar_height"
+        app:layout_constraintLeft_toRightOf="@id/condition_list_primary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_xray"
+        app:layout_constraintBottom_toTopOf="@+id/img_xray_original"
+        android:background="@color/black" />
+
+    <XRayAnalysis.Droid.Results.XRayDisplayView
+        android:id="@+id/img_xray_original"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/condition_list_primary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/black_bar_top"
+        app:layout_constraintBottom_toTopOf="@+id/layout_see_more_hide"
+        android:background="@color/black"
+        app:filename_label="@string/see_all_image_label_analyzed"
+        app:label_display_mode="small"/>
+
+    <View
+        android:id="@+id/black_bar_bottom"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/see_more_bar_height"
+        app:layout_constraintLeft_toRightOf="@id/condition_list_primary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_xray_original"
+        app:layout_constraintBottom_toTopOf="@+id/layout_see_more_hide"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/layout_see_more_hide"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/black_bar_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_results_see_more_button"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <Button
+            android:id="@+id/button_see_more_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:text="@string/see_all_btn_hide" />
+
+    </LinearLayout>
+    
+</android.support.constraint.ConstraintLayout>

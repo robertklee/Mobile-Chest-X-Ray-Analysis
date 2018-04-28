@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<XRayAnalysis.Droid.Results.ConditionResultView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/condition_results"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/results_condition_result_height"
+    android:paddingLeft="@dimen/results_horiz_padding"
+    android:paddingRight="@dimen/results_horiz_padding" />

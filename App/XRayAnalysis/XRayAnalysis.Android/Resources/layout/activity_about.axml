@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/toolbar" />
+
+   <LinearLayout
+        android:id="@+id/layout_application_repository"
+        style="@style/AboutLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" >
+
+        <ImageView
+            android:id="@+id/icon_view_application_repository"
+            style="@style/AboutIcons"
+            android:layout_marginLeft="@dimen/about_icon_left_margin"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_view_repository" />
+
+        <TextView
+            android:id="@+id/txt_view_application_repository"
+            style="@style/AboutTextButtons"
+            android:layout_marginLeft="@dimen/about_text_left_margin"
+            android:layout_gravity="center_vertical"
+            android:text="@string/about_application_repository" />
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/layout_model_repository"
+        style="@style/AboutLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_application_repository" >
+
+        <ImageView
+            android:id="@+id/icon_view_model_repository"
+            style="@style/AboutIcons"
+            android:layout_marginLeft="@dimen/about_icon_left_margin"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_view_repository" />
+
+        <TextView
+            android:id="@+id/txt_view_model_repository"
+            style="@style/AboutTextButtons"
+            android:layout_marginLeft="@dimen/about_text_left_margin"
+            android:layout_gravity="center_vertical"
+            android:text="@string/about_model_repository" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_clear_data"
+        android:theme="@style/AppTheme.PrimaryActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_version"
+        android:layout_marginBottom="@dimen/about_clear_button_bottom_margin"
+        android:text="@string/about_button_clear_data" />
+
+    <TextView
+        android:id="@+id/txt_version"
+        style="@style/AboutBottomText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/about_bottom_text_bottom_margin"
+        android:text="@string/about_version" />
+
+</android.support.constraint.ConstraintLayout>

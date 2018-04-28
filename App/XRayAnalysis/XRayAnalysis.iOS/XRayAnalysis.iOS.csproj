@@ -1,0 +1,349 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{807D60ED-ECF1-4024-8AF6-48E6BA3D656D}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>XRayAnalysis.iOS</RootNamespace>
+    <AssemblyName>XRayAnalysis.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <IOSDebuggerPort>62624</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchExtraArgs>--mono:static</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>33656</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchExtraArgs>--mono:static</MtouchExtraArgs>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SkiaSharp.1.59.3\lib\XamariniOS\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.iOS, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SkiaSharp.Views.1.59.3\lib\XamariniOS\SkiaSharp.Views.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>..\..\packages\Microsoft.AppCenter.1.4.0\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings">
+      <HintPath>..\..\packages\Microsoft.AppCenter.1.4.0\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>..\..\packages\Microsoft.AppCenter.Crashes.1.4.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
+      <HintPath>..\..\packages\Microsoft.AppCenter.Crashes.1.4.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics">
+      <HintPath>..\..\packages\Microsoft.AppCenter.Analytics.1.4.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
+      <HintPath>..\..\packages\Microsoft.AppCenter.Analytics.1.4.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="TOCropBinding">
+      <HintPath>..\..\packages\Wapps.TOCrop.0.1.2\lib\Xamarin.iOS\TOCropBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Calabash">
+      <HintPath>..\..\packages\Xamarin.TestCloud.Agent.0.21.4\lib\Xamarin.iOS\Calabash.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back-arrow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPadPro%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPad_iPadMini%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPad_iPadMini%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPad_Settings%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPad_Settings%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPad_Spotlight%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\app-iconiPad_Spotlight%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\background-colours.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\background-colours.imageset\BackgroundPurpleBlurShort%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\background-colours.imageset\BackgroundPurpleBlurShort%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\background-colours.imageset\BackgroundPurpleBlurShort%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-hide.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-hide.imageset\iOSEyeHideGrey%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-hide.imageset\iOSEyeHideGrey%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-hide.imageset\iOSEyeHideGrey%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-show.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-show.imageset\iOSEyeWhite%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-show.imageset\iOSEyeWhite%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\eye-show.imageset\iOSEyeWhite%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back-arrow.imageset\back-arrow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back-arrow.imageset\back-arrow%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back-arrow.imageset\back-arrow%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-files.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-files.imageset\import-from-files%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-files.imageset\import-from-files%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-files.imageset\import-from-files%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splash-screen.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splash-screen.imageset\BackgroundPurpleBlurLong%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splash-screen.imageset\BackgroundPurpleBlurLong%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splash-screen.imageset\BackgroundPurpleBlurLong%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\take-photo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\take-photo.imageset\take-photo%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\take-photo.imageset\take-photo%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\take-photo.imageset\take-photo%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-photos.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-photos.imageset\upload-image%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-photos.imageset\upload-image%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\import-from-photos.imageset\upload-image%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\background-colours.imageset\" />
+    <Folder Include="Assets.xcassets\logo.imageset\" />
+    <Folder Include="Assets.xcassets\restore-session.imageset\" />
+    <Folder Include="Assets.xcassets\eye-hide.imageset\" />
+    <Folder Include="Assets.xcassets\eye-show.imageset\" />
+    <Folder Include="src\FirstRun\" />
+    <Folder Include="src\Service\UserDefaults\" />
+    <Folder Include="src\Service\GestureRecognizer\" />
+    <Folder Include="src\About\" />
+    <Folder Include="src\Service\NavigationController\" />
+    <Folder Include="Assets.xcassets\import-from-files.imageset\" />
+    <Folder Include="Assets.xcassets\import-from-files.imageset\" />
+    <Folder Include="src\Cropping\" />
+    <Folder Include="Assets.xcassets\splash-screen.imageset\" />
+    <Folder Include="Assets.xcassets\take-photo.imageset\" />
+    <Folder Include="Assets.xcassets\import-from-photos.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="src\ImageInput\ImageInput.storyboard" />
+    <InterfaceDefinition Include="src\ImageInput\ImageInputViewController.xib" />
+    <InterfaceDefinition Include="src\Results\ResultsViewController.xib" />
+    <InterfaceDefinition Include="src\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="src\Main.storyboard" />
+    <InterfaceDefinition Include="src\Results\Results.storyboard" />
+    <InterfaceDefinition Include="src\Analysis\AnalysisViewController.xib" />
+    <InterfaceDefinition Include="src\Analysis\Analysis.storyboard" />
+    <InterfaceDefinition Include="src\MainNavigationController.xib" />
+    <InterfaceDefinition Include="src\Results\Condition.xib" />
+    <InterfaceDefinition Include="src\Results\PrimaryCondition.xib" />
+    <InterfaceDefinition Include="src\FirstRun\FirstRun.storyboard" />
+    <InterfaceDefinition Include="src\FirstRun\FirstRunViewController.xib" />
+    <InterfaceDefinition Include="src\About\About.storyboard" />
+    <InterfaceDefinition Include="src\About\AboutViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <BundleResource Include="environment.txt" />
+    <BundleResource Include="Resources\ChestXRay-empty.mlmodelc\coremldata.bin" />
+    <BundleResource Include="Resources\ChestXRay-empty.mlmodelc\model.espresso.net" />
+    <BundleResource Include="Resources\ChestXRay-empty.mlmodelc\model.espresso.shape" />
+    <BundleResource Include="Resources\ChestXRay-empty.mlmodelc\model.espresso.weights" />
+    <BundleResource Include="Resources\ChestXRay-empty.mlmodelc\model\coremldata.bin" />
+    <BundleResource Include="Resources\ChestXRay-CAM-empty.mlmodelc\coremldata.bin" />
+    <BundleResource Include="Resources\ChestXRay-CAM-empty.mlmodelc\model.espresso.net" />
+    <BundleResource Include="Resources\ChestXRay-CAM-empty.mlmodelc\model.espresso.shape" />
+    <BundleResource Include="Resources\ChestXRay-CAM-empty.mlmodelc\model.espresso.weights" />
+    <BundleResource Include="Resources\ChestXRay-CAM-empty.mlmodelc\model\coremldata.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AppDelegate.cs" />
+    <Compile Include="src\ImageInput\ImageInputViewController.cs" />
+    <Compile Include="src\ImageInput\ImageInputViewController.designer.cs" />
+    <Compile Include="src\Results\ResultsViewController.cs" />
+    <Compile Include="src\Results\ResultsViewController.designer.cs">
+      <DependentUpon>ResultsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Main.cs" />
+    <Compile Include="src\Service\AI\CoreMLImageModel.cs" />
+    <Compile Include="src\Analysis\AnalysisViewController.cs" />
+    <Compile Include="src\Analysis\AnalysisViewController.designer.cs">
+      <DependentUpon>AnalysisViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Constants.cs" />
+    <Compile Include="src\MainNavigationController.cs" />
+    <Compile Include="src\MainNavigationController.designer.cs">
+      <DependentUpon>MainNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Service\AI\ChestXRay\iOSChestXRayAIClient.cs" />
+    <Compile Include="src\Results\ConditionViewCell.cs" />
+    <Compile Include="src\Results\ConditionViewCell.designer.cs">
+      <DependentUpon>ConditionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\FirstRun\FirstRunViewController.cs" />
+    <Compile Include="src\FirstRun\FirstRunViewController.designer.cs">
+      <DependentUpon>FirstRunViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Service\UserDefaults\FirstLaunchClient.cs" />
+    <Compile Include="src\Service\GestureRecognizer\GestureRecognizerUtil.cs" />
+    <Compile Include="src\About\AboutViewController.cs" />
+    <Compile Include="src\About\AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\About\AboutTableViewController.cs" />
+    <Compile Include="src\About\AboutTableViewController.designer.cs">
+      <DependentUpon>AboutTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Service\NavigationController\NavigationControllerUtil.cs" />
+    <Compile Include="src\Results\ConditionsTableViewSource.cs" />
+    <Compile Include="src\Cropping\CropViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XRayAnalysis\XRayAnalysis.csproj">
+      <Project>{08349E12-9557-4E69-9ACE-D8D50FDADA52}</Project>
+      <Name>XRayAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ShareExtension\ShareExtension.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{3D14AC5F-AF3A-46C5-8D20-0C03BC4C19EC}</Project>
+      <Name>ShareExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

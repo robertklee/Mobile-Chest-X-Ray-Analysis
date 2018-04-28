@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PFZ-3B-bh1">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImageInput-->
+        <scene sceneID="K3L-9M-LB9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ImageInput" id="k2b-WL-Jbu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Shb-jF-a8E"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBD-mC-sRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323.14453125" y="496.77891654465589"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="nji-Gf-e6r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PFZ-3B-bh1" customClass="MainNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NN3-lW-yrK">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k2b-WL-Jbu" kind="relationship" relationship="rootViewController" id="zPt-cE-Qiv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyG-Ze-hXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiagnostiX" width="32" height="32"/>
+        <image name="back-arrow" width="15" height="23"/>
+        <image name="collapse" width="24" height="24"/>
+        <image name="expand" width="23" height="23"/>
+        <image name="layers-purple" width="23" height="23"/>
+        <image name="layers-turq" width="23" height="23"/>
+        <image name="layers-unselected" width="23" height="23"/>
+        <image name="see-all" width="23" height="14"/>
+        <image name="sort" width="23" height="13"/>
+        <image name="title_icon.png" width="32" height="32"/>
+        <image name="00027618_007.png" width="1024" height="1024"/>
+        <image name="ai-icon-circle-02.png" width="418" height="419"/>
+        <image name="take-photo" width="150" height="131.666672"/>
+        <image name="upload-image" width="150" height="131.666672"/>
+        <image name="logo" width="162" height="113"/>
+        <image name="splash-screen" width="1536.33337" height="2048.33325"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="1.59.3" />
+    <PackageReference Include="SkiaSharp.Views" Version="1.59.3" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.4.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\Results\" />
+    <Folder Include="src\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\SampleModel-FinalLayerWeights.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SampleModel-FinalLayerWeights.csv" />
+  </ItemGroup>
+</Project>

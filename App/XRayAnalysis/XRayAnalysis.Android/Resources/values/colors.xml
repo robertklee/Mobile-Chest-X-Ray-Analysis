@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<resources>
+    
+     <!-- Color Palette -->
+    <color name="pale_grey">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="grey">#545454</color>
+    <color name="eggplant">#190C40</color>
+    <color name="purple">#5331A0</color>
+    <color name="pink">#C203C9</color>
+    <color name="orchid">#DAA4F9</color>
+    <color name="turquoise">#058288</color>
+    <color name="mint_green">#A5D7DE</color>
+    <color name="blue">#1976D2</color>
+    <color name="sky_blue">#1E9EF5</color>
+    <color name="indigo">#25055A</color>
+    <color name="lavender">#9893D8</color>
+    <color name="orange">#FF6927</color>
+    <color name="peach">#FFC892</color>
+
+    <!-- General -->
+    <color name="color_primary">#27155E</color>
+    <color name="color_primary_dark">@color/eggplant</color>
+    <color name="color_accent">@color/turquoise</color>
+
+    <!-- Splash Screen -->
+    <color name="purple_transparent">#005331A0</color>
+    <color name="light_purple_semi_transparent">#66DAA4F9</color>
+    <color name="blue_semi_transparent">#99000FE9</color>
+    <color name="turquoise_2">#8000A7BF</color>
+
+    <!-- Results -->
+    <color name="results_element_border">#D6D6D6</color>
+    <color name="results_btn_bar_sep">#48FFFFFF</color>
+
+</resources>

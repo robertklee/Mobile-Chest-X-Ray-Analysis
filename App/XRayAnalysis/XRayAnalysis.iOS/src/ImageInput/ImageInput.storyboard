@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PKX-cJ-wOx">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Input View Controller-->
+        <scene sceneID="HKH-Ql-Cx9">
+            <objects>
+                <viewController id="PKX-cJ-wOx" customClass="ImageInputViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39P-3N-HDk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HT8-yU-NdJ">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX2-Bd-NQM" userLabel="TopView">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="334.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn0-88-OQS" userLabel="ChoosePhotoButton">
+                                                <rect key="frame" x="10" y="10" width="748" height="319.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Select a chest x-ray image from your camera roll to begin analysis" label="Import from Photos">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="import-from-photos" translatesAutoresizingMaskIntoConstraints="NO" id="EXR-YS-sxB">
+                                                <rect key="frame" x="309" y="64" width="150" height="106.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Import from Photos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.55000000000000004" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRs-wD-4Qp" userLabel="ImportImage">
+                                                <rect key="frame" x="277" y="182.5" width="214" height="31.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="Select a chest x-ray image from your  camera roll to begin analysis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giT-AB-7Rw" userLabel="ImportImageDescription">
+                                                <rect key="frame" x="10" y="220" width="748" height="38"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Gn0-88-OQS" firstAttribute="top" secondItem="dX2-Bd-NQM" secondAttribute="top" constant="10" id="0dv-wN-gte"/>
+                                            <constraint firstItem="EXR-YS-sxB" firstAttribute="centerX" secondItem="dX2-Bd-NQM" secondAttribute="centerX" id="8Aa-5F-sS0"/>
+                                            <constraint firstItem="EXR-YS-sxB" firstAttribute="centerY" secondItem="dX2-Bd-NQM" secondAttribute="centerY" multiplier="0.7" priority="500" id="A0d-qs-Vf1"/>
+                                            <constraint firstItem="EXR-YS-sxB" firstAttribute="height" secondItem="Gn0-88-OQS" secondAttribute="height" multiplier="1:3" id="Dua-5U-nQp"/>
+                                            <constraint firstItem="Gn0-88-OQS" firstAttribute="trailing" secondItem="giT-AB-7Rw" secondAttribute="trailing" id="NYu-vG-vrv"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gn0-88-OQS" secondAttribute="bottom" constant="5" id="af9-AK-1F7"/>
+                                            <constraint firstItem="EXR-YS-sxB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dX2-Bd-NQM" secondAttribute="top" id="b30-2F-dTc"/>
+                                            <constraint firstItem="giT-AB-7Rw" firstAttribute="centerX" secondItem="dX2-Bd-NQM" secondAttribute="centerX" id="c4K-Mp-XqH"/>
+                                            <constraint firstItem="Gn0-88-OQS" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="giT-AB-7Rw" secondAttribute="bottom" id="cws-bL-x1k"/>
+                                            <constraint firstItem="giT-AB-7Rw" firstAttribute="leading" secondItem="Gn0-88-OQS" secondAttribute="leading" id="fKl-Oe-FXi"/>
+                                            <constraint firstItem="BRs-wD-4Qp" firstAttribute="top" secondItem="EXR-YS-sxB" secondAttribute="bottom" constant="12" id="fVZ-sB-EOP"/>
+                                            <constraint firstItem="BRs-wD-4Qp" firstAttribute="centerX" secondItem="dX2-Bd-NQM" secondAttribute="centerX" id="qbf-SG-LUp"/>
+                                            <constraint firstItem="Gn0-88-OQS" firstAttribute="leading" secondItem="dX2-Bd-NQM" secondAttribute="leading" constant="10" id="sya-UU-PMw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gn0-88-OQS" secondAttribute="trailing" constant="10" id="vRU-iR-auS"/>
+                                            <constraint firstItem="giT-AB-7Rw" firstAttribute="top" secondItem="BRs-wD-4Qp" secondAttribute="bottom" constant="6" id="xkT-by-kdl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0n-Pk-0cT" userLabel="ImportFromFilesView">
+                                        <rect key="frame" x="0.0" y="334.5" width="768" height="335"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XED-hi-Yno" userLabel="ChooseFilesButton">
+                                                <rect key="frame" x="10" y="10" width="748" height="320"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Select a chest x-ray image to begin analysis" label="Import from Files"/>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="import-from-files" translatesAutoresizingMaskIntoConstraints="NO" id="hGv-ST-vxc">
+                                                <rect key="frame" x="309" y="64" width="150" height="106.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Import from Files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IK9-yp-GQq">
+                                                <rect key="frame" x="290.5" y="182.5" width="187.5" height="31.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a chest x-ray image to begin analysis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yds-fM-zrD" userLabel="FilesDescription">
+                                                <rect key="frame" x="10" y="220" width="748" height="18"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yds-fM-zrD" firstAttribute="leading" secondItem="XED-hi-Yno" secondAttribute="leading" id="61Q-IA-27f"/>
+                                            <constraint firstItem="XED-hi-Yno" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yds-fM-zrD" secondAttribute="bottom" id="988-Lu-ixw"/>
+                                            <constraint firstItem="hGv-ST-vxc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a0n-Pk-0cT" secondAttribute="top" id="9TY-ER-UYP"/>
+                                            <constraint firstItem="IK9-yp-GQq" firstAttribute="centerX" secondItem="a0n-Pk-0cT" secondAttribute="centerX" id="ApR-Kh-sSe"/>
+                                            <constraint firstItem="XED-hi-Yno" firstAttribute="top" secondItem="a0n-Pk-0cT" secondAttribute="top" constant="10" id="BFe-vW-ddr"/>
+                                            <constraint firstAttribute="trailing" secondItem="XED-hi-Yno" secondAttribute="trailing" constant="10" id="EUG-gS-e5k"/>
+                                            <constraint firstItem="yds-fM-zrD" firstAttribute="centerX" secondItem="a0n-Pk-0cT" secondAttribute="centerX" id="M2p-nZ-B0a"/>
+                                            <constraint firstItem="hGv-ST-vxc" firstAttribute="centerY" secondItem="a0n-Pk-0cT" secondAttribute="centerY" multiplier="0.7" priority="500" id="NmQ-r2-I39"/>
+                                            <constraint firstItem="XED-hi-Yno" firstAttribute="leading" secondItem="a0n-Pk-0cT" secondAttribute="leading" constant="10" id="Tbq-om-Orp"/>
+                                            <constraint firstAttribute="bottom" secondItem="XED-hi-Yno" secondAttribute="bottom" constant="5" id="Wbx-lk-GtW"/>
+                                            <constraint firstItem="hGv-ST-vxc" firstAttribute="centerX" secondItem="a0n-Pk-0cT" secondAttribute="centerX" id="bOv-06-NhK"/>
+                                            <constraint firstItem="XED-hi-Yno" firstAttribute="trailing" secondItem="yds-fM-zrD" secondAttribute="trailing" id="iQv-QY-AtY"/>
+                                            <constraint firstItem="IK9-yp-GQq" firstAttribute="top" secondItem="hGv-ST-vxc" secondAttribute="bottom" constant="12" id="pjY-Oy-lX7"/>
+                                            <constraint firstItem="yds-fM-zrD" firstAttribute="top" secondItem="IK9-yp-GQq" secondAttribute="bottom" constant="6" id="ycx-GB-3TW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-Sg-Xgg" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="669.5" width="768" height="334.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9u-xl-Ml9" userLabel="ChooseCameraButton">
+                                                <rect key="frame" x="10" y="5" width="748" height="319.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Take a photo of a printed chest x-ray  to begin analysis" label="Take a photo"/>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="take-photo" translatesAutoresizingMaskIntoConstraints="NO" id="joN-9X-GgK">
+                                                <rect key="frame" x="309" y="63.5" width="150" height="106.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Take a Photo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGW-8N-EtY">
+                                                <rect key="frame" x="313" y="182" width="142.5" height="31.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a photo of a printed chest x-ray  to begin analysis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgW-2S-rMz" userLabel="CameraDescription">
+                                                <rect key="frame" x="10" y="219.5" width="748" height="38"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="joN-9X-GgK" firstAttribute="centerX" secondItem="Wcq-Sg-Xgg" secondAttribute="centerX" id="7bT-S8-Uwb"/>
+                                            <constraint firstItem="joN-9X-GgK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wcq-Sg-Xgg" secondAttribute="top" id="9pi-ey-BmU"/>
+                                            <constraint firstItem="mGW-8N-EtY" firstAttribute="centerX" secondItem="Wcq-Sg-Xgg" secondAttribute="centerX" id="CbE-xU-s1m"/>
+                                            <constraint firstAttribute="trailing" secondItem="U9u-xl-Ml9" secondAttribute="trailing" constant="10" id="DJs-V4-ItE"/>
+                                            <constraint firstItem="U9u-xl-Ml9" firstAttribute="leading" secondItem="Wcq-Sg-Xgg" secondAttribute="leading" constant="10" id="MTk-qm-y1J"/>
+                                            <constraint firstItem="mGW-8N-EtY" firstAttribute="top" secondItem="joN-9X-GgK" secondAttribute="bottom" constant="12" id="NZZ-Ku-D7M"/>
+                                            <constraint firstItem="wgW-2S-rMz" firstAttribute="top" secondItem="mGW-8N-EtY" secondAttribute="bottom" constant="6" id="NpU-JT-OYB"/>
+                                            <constraint firstItem="wgW-2S-rMz" firstAttribute="leading" secondItem="U9u-xl-Ml9" secondAttribute="leading" id="OS8-9R-m0c"/>
+                                            <constraint firstItem="U9u-xl-Ml9" firstAttribute="trailing" secondItem="wgW-2S-rMz" secondAttribute="trailing" id="RyG-1X-Ohl"/>
+                                            <constraint firstItem="joN-9X-GgK" firstAttribute="centerY" secondItem="Wcq-Sg-Xgg" secondAttribute="centerY" multiplier="0.7" priority="500" id="apc-5G-RZn"/>
+                                            <constraint firstItem="wgW-2S-rMz" firstAttribute="centerX" secondItem="Wcq-Sg-Xgg" secondAttribute="centerX" id="awy-bT-lIa"/>
+                                            <constraint firstItem="U9u-xl-Ml9" firstAttribute="top" secondItem="Wcq-Sg-Xgg" secondAttribute="top" constant="5" id="ebP-eq-Yhm"/>
+                                            <constraint firstItem="U9u-xl-Ml9" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wgW-2S-rMz" secondAttribute="bottom" id="ecF-bw-dnn"/>
+                                            <constraint firstAttribute="bottom" secondItem="U9u-xl-Ml9" secondAttribute="bottom" constant="10" id="v3z-us-9ME"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="joN-9X-GgK" firstAttribute="width" secondItem="EXR-YS-sxB" secondAttribute="width" id="JTc-dc-YOV"/>
+                                    <constraint firstItem="hGv-ST-vxc" firstAttribute="width" secondItem="joN-9X-GgK" secondAttribute="width" id="ahP-7X-QEJ"/>
+                                    <constraint firstItem="joN-9X-GgK" firstAttribute="height" secondItem="EXR-YS-sxB" secondAttribute="height" id="loq-A9-Lhp"/>
+                                    <constraint firstItem="hGv-ST-vxc" firstAttribute="height" secondItem="joN-9X-GgK" secondAttribute="height" id="z2c-DI-ZFw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94867008919999996" green="0.94938892129999997" blue="0.94878143069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HT8-yU-NdJ" firstAttribute="trailing" secondItem="ydh-rA-sjT" secondAttribute="trailing" id="IqL-L5-Dwe"/>
+                            <constraint firstItem="HT8-yU-NdJ" firstAttribute="leading" secondItem="ydh-rA-sjT" secondAttribute="leading" id="MHo-Jx-V7a"/>
+                            <constraint firstItem="HT8-yU-NdJ" firstAttribute="bottom" secondItem="ydh-rA-sjT" secondAttribute="bottom" id="iKl-e0-hai"/>
+                            <constraint firstItem="ydh-rA-sjT" firstAttribute="top" secondItem="HT8-yU-NdJ" secondAttribute="top" id="ny0-YO-8m4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ydh-rA-sjT"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="AEY-Cj-Zqu"/>
+                    <connections>
+                        <outlet property="CameraImportImage" destination="joN-9X-GgK" id="name-outlet-joN-9X-GgK"/>
+                        <outlet property="ChooseCameraButton" destination="U9u-xl-Ml9" id="name-outlet-U9u-xl-Ml9"/>
+                        <outlet property="ChooseFilesButton" destination="XED-hi-Yno" id="name-outlet-XED-hi-Yno"/>
+                        <outlet property="ChoosePhotoButton" destination="Gn0-88-OQS" id="name-outlet-Gn0-88-OQS"/>
+                        <outlet property="FileImportImage" destination="hGv-ST-vxc" id="name-outlet-hGv-ST-vxc"/>
+                        <outlet property="ImportFromCameraDescription" destination="wgW-2S-rMz" id="name-outlet-wgW-2S-rMz"/>
+                        <outlet property="ImportFromCameraTitle" destination="mGW-8N-EtY" id="name-outlet-mGW-8N-EtY"/>
+                        <outlet property="ImportFromFilesDescription" destination="yds-fM-zrD" id="name-outlet-yds-fM-zrD"/>
+                        <outlet property="ImportFromFilesTitle" destination="IK9-yp-GQq" id="name-outlet-IK9-yp-GQq"/>
+                        <outlet property="ImportFromPhotoTitle" destination="BRs-wD-4Qp" id="name-outlet-BRs-wD-4Qp"/>
+                        <outlet property="ImportFromPhotosDescription" destination="giT-AB-7Rw" id="name-outlet-giT-AB-7Rw"/>
+                        <outlet property="PhotoImportImage" destination="EXR-YS-sxB" id="name-outlet-EXR-YS-sxB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqG-gn-KJG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356.25" y="-101.3672"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="import-from-files" width="150" height="132"/>
+        <image name="import-from-photos" width="150" height="132"/>
+        <image name="take-photo" width="150" height="132"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Linear Gradient Background -->
+    <item
+        android:gravity="center">
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:startColor="@color/eggplant"
+                android:endColor="@color/purple"
+                android:angle="-90" />
+        </shape>
+    </item>
+
+    <!-- Light Purple Gradient Circle -->
+    <item
+        android:gravity="center"
+        android:right="550dp"
+        android:top="225dp">
+        <shape
+            android:shape="oval">
+            <gradient
+                android:startColor="@color/light_purple_semi_transparent"
+                android:endColor="@color/purple_transparent"
+                android:gradientRadius="655dp"
+                android:type="radial"/>
+            <size
+                android:width="1310dp"
+                android:height="1310dp"/>
+        </shape>
+    </item>
+
+    <!-- Blue Gradient Circle -->
+    <item
+        android:gravity="center"
+        android:left="480dp"
+        android:bottom="75dp">
+        <shape
+            android:shape="oval">
+            <gradient
+                android:startColor="@color/blue_semi_transparent"
+                android:endColor="@color/purple_transparent"
+                android:gradientRadius="495dp"
+                android:type="radial"/>
+            <size
+                android:width="990dp"
+                android:height="990dp"/>
+        </shape>
+    </item>
+
+    <!-- Turquoise Gradient Circle -->
+    <item
+        android:gravity="center"
+        android:left="430dp"
+        android:top="600dp">
+        <shape
+            android:shape="oval">
+            <gradient
+                android:startColor="@color/turquoise_2"
+                android:endColor="@color/purple_transparent"
+                android:gradientRadius="535dp"
+                android:type="radial"/>
+            <size
+                android:width="1070dp"
+                android:height="1070dp"/>
+        </shape>
+    </item>
+
+</layer-list>

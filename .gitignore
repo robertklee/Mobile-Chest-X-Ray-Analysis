@@ -1,0 +1,5 @@
+# Mac System Files
+.DS_Store
+
+# Compiled Python Files
+*.pyc

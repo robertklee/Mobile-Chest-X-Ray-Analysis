@@ -1,0 +1,2182 @@
+{
+  "layer_shapes" : {
+    "activation_14_output" : {
+      "k" : 256,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_117_output" : {
+      "k" : 960,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_2_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_9_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_34_output" : {
+      "k" : 768,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_94_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_46_output" : {
+      "k" : 640,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_73_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_0_bn_output" : {
+      "k" : 512,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_39_output" : {
+      "k" : 512,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_112_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_1_10_bn_output" : {
+      "k" : 448,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_1_0_bn_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_52_output" : {
+      "k" : 448,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_2_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_18_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_14_output__tmp__identity__" : {
+      "k" : 384,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_31_output" : {
+      "k" : 384,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_53_output__tmp__identity__" : {
+      "k" : 864,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_39_output__tmp__identity__" : {
+      "k" : 928,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_10_output" : {
+      "k" : 192,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_3_0_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_19_bn_output" : {
+      "k" : 864,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_25_output__tmp__identity__" : {
+      "k" : 480,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_57_output" : {
+      "k" : 992,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_27_output" : {
+      "k" : 544,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_41_output" : {
+      "k" : 992,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_98_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "tr_1_bn_output" : {
+      "k" : 512,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_11_output" : {
+      "k" : 288,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_3_11_bn_output" : {
+      "k" : 864,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_77_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_5_bn_output" : {
+      "k" : 288,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_90_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_5_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_56_output" : {
+      "k" : 512,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_3_bn_output" : {
+      "k" : 352,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_6_output" : {
+      "k" : 256,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_105_output" : {
+      "k" : 768,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_35_output" : {
+      "k" : 448,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_0_3_bn_output" : {
+      "k" : 160,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_2_22_bn_output" : {
+      "k" : 960,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_9_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_22_output" : {
+      "k" : 384,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_31_output__tmp__identity__" : {
+      "k" : 672,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_24_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_1_6_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_56_output__tmp__identity__" : {
+      "k" : 960,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_116_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_0_3_conv2D_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_2_8_bn_output" : {
+      "k" : 512,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_100_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_28_output__tmp__identity__" : {
+      "k" : 576,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_83_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_10_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_49_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_11_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_12_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_62_output" : {
+      "k" : 608,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_13_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_45_output" : {
+      "k" : 608,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_12_bn_output" : {
+      "k" : 640,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_28_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_15_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_1_output" : {
+      "k" : 64,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "dense_2_16_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_14_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_17_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_15_output" : {
+      "k" : 416,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_18_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_20_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_19_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_4_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_41_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_7_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_109_output" : {
+      "k" : 832,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_14_bn_output" : {
+      "k" : 960,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "tr_0_conv2D_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_1_1_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_34_output__tmp__identity__" : {
+      "k" : 768,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_87_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_26_output" : {
+      "k" : 512,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_20_output__tmp__identity__" : {
+      "k" : 320,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_10_output" : {
+      "k" : 256,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_66_output" : {
+      "k" : 672,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_1_bn_output" : {
+      "k" : 544,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_38_output" : {
+      "k" : 896,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_1_bn_output" : {
+      "k" : 160,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_45_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_45_output__tmp__identity__" : {
+      "k" : 608,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_52_output" : {
+      "k" : 832,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_104_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_17_output__tmp__identity__" : {
+      "k" : 480,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_34_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_3_2_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_6_bn_output" : {
+      "k" : 704,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_13_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_49_output" : {
+      "k" : 736,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_19_output" : {
+      "k" : 288,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_33_output" : {
+      "k" : 736,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_6_bn_output" : {
+      "k" : 320,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "global_average_pooling2d_1_output" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense_2_4_bn_output" : {
+      "k" : 384,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_3_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_12_output__tmp__identity__" : {
+      "k" : 320,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_51_output__tmp__identity__" : {
+      "k" : 800,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_15_bn_output" : {
+      "k" : 736,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_0_0_conv2D_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_0_4_bn_output" : {
+      "k" : 192,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_93_output" : {
+      "k" : 576,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_59_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_111_output" : {
+      "k" : 864,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_72_output" : {
+      "k" : 768,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_9_output" : {
+      "k" : 224,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_23_output__tmp__identity__" : {
+      "k" : 416,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_38_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_51_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_1_output" : {
+      "k" : 96,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_14_output" : {
+      "k" : 384,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "average_pooling2d_2_output" : {
+      "k" : 256,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_30_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_17_output" : {
+      "k" : 160,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_1_8_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_9_bn_output" : {
+      "k" : 544,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_48_output__tmp__identity__" : {
+      "k" : 704,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_56_output" : {
+      "k" : 960,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_0_5_conv2D_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_40_output" : {
+      "k" : 960,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "input1" : {
+      "k" : 3,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "activation_8_output" : {
+      "k" : 160,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_3_4_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_108_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_97_output" : {
+      "k" : 640,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_1_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_76_output" : {
+      "k" : 832,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_55_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_5_output" : {
+      "k" : 224,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_37_output" : {
+      "k" : 864,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "tr_2_bn_output" : {
+      "k" : 1024,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_21_output" : {
+      "k" : 352,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_9_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_44_output" : {
+      "k" : 320,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_40_output__tmp__identity__" : {
+      "k" : 960,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_6_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "tr_1_conv2D_output" : {
+      "k" : 256,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_26_output__tmp__identity__" : {
+      "k" : 512,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_23_output" : {
+      "k" : 256,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_115_output" : {
+      "k" : 928,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_11_bn_output" : {
+      "k" : 608,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_18_bn_output" : {
+      "k" : 832,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_2_bn_output" : {
+      "k" : 576,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_18_output" : {
+      "k" : 512,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_37_output__tmp__identity__" : {
+      "k" : 864,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_10_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_1_2_bn_output" : {
+      "k" : 192,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_3_10_bn_output" : {
+      "k" : 832,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_11_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_12_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_4_output" : {
+      "k" : 96,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_69_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_13_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_44_output" : {
+      "k" : 576,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_82_output" : {
+      "k" : 928,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_14_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "max_pooling2d_1_output" : {
+      "k" : 64,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_48_output" : {
+      "k" : 384,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_15_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_61_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_27_output" : {
+      "k" : 320,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_40_output" : {
+      "k" : 256,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_21_bn_output" : {
+      "k" : 928,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_7_bn_output" : {
+      "k" : 736,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_1_7_bn_output" : {
+      "k" : 352,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_43_output__tmp__identity__" : {
+      "k" : 544,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_25_output" : {
+      "k" : 480,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_5_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_29_output__tmp__identity__" : {
+      "k" : 608,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_20_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_21_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_22_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_86_output" : {
+      "k" : 992,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_0_2_conv2D_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_15_output__tmp__identity__" : {
+      "k" : 416,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_23_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_65_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_51_output" : {
+      "k" : 800,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_54_output__tmp__identity__" : {
+      "k" : 896,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_103_output" : {
+      "k" : 736,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_119_output" : {
+      "k" : 992,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_54_output" : {
+      "k" : 480,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_33_output" : {
+      "k" : 416,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_48_output" : {
+      "k" : 704,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_32_output" : {
+      "k" : 704,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_12_output" : {
+      "k" : 224,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_3_6_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_13_bn_output" : {
+      "k" : 928,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_0_bn_output" : {
+      "k" : 256,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_3_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_21_output__tmp__identity__" : {
+      "k" : 352,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_0_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_0_0_bn_output" : {
+      "k" : 64,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_9_output__tmp__identity__" : {
+      "k" : 224,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_79_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_7_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_92_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_46_output__tmp__identity__" : {
+      "k" : 640,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_110_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_58_output" : {
+      "k" : 544,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_32_output__tmp__identity__" : {
+      "k" : 704,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_29_output" : {
+      "k" : 608,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_71_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_8_output" : {
+      "k" : 192,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_13_output" : {
+      "k" : 352,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_37_output" : {
+      "k" : 480,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_57_output__tmp__identity__" : {
+      "k" : 992,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_50_output" : {
+      "k" : 416,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_8_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_5_bn_output" : {
+      "k" : 416,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_16_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_55_output" : {
+      "k" : 928,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_107_output" : {
+      "k" : 800,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_3_bn_output" : {
+      "k" : 608,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_0_5_bn_output" : {
+      "k" : 224,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_1_3_bn_output" : {
+      "k" : 224,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_3_1_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_96_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_75_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_36_output" : {
+      "k" : 832,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_14_bn_output" : {
+      "k" : 704,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "output1" : {
+      "k" : 14,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "concatenate_24_output__tmp__identity__" : {
+      "k" : 448,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_20_output" : {
+      "k" : 320,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_4_output" : {
+      "k" : 192,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_3_8_bn_output" : {
+      "k" : 768,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_3_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_10_output__tmp__identity__" : {
+      "k" : 256,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_64_output" : {
+      "k" : 640,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_8_bn_output" : {
+      "k" : 384,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_114_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_35_output__tmp__identity__" : {
+      "k" : 800,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_43_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_7_output__tmp__identity__" : {
+      "k" : 160,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_22_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_8_output__tmp__identity__" : {
+      "k" : 192,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_17_output" : {
+      "k" : 480,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_1_7_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_20_bn_output" : {
+      "k" : 896,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "tr_0_bn_output" : {
+      "k" : 256,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_0_4_conv2D_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_89_output" : {
+      "k" : 512,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_43_output" : {
+      "k" : 544,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_68_output" : {
+      "k" : 704,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "tr_2_conv2D_output" : {
+      "k" : 512,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_81_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_47_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_60_output" : {
+      "k" : 576,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_41_output__tmp__identity__" : {
+      "k" : 992,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_121_output" : {
+      "k" : 1024,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_26_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_13_output__tmp__identity__" : {
+      "k" : 352,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_24_output" : {
+      "k" : 448,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_1_bn_output" : {
+      "k" : 288,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_8_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_10_bn_output" : {
+      "k" : 576,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_15_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_5_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_38_output__tmp__identity__" : {
+      "k" : 896,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_17_bn_output" : {
+      "k" : 800,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_0_1_bn_output" : {
+      "k" : 96,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_52_output__tmp__identity__" : {
+      "k" : 832,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_50_output" : {
+      "k" : 768,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_1_2_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_118_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_85_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_12_bn_output" : {
+      "k" : 896,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_102_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_4_output__tmp__identity__" : {
+      "k" : 192,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_49_output__tmp__identity__" : {
+      "k" : 736,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_5_output__tmp__identity__" : {
+      "k" : 224,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_74_output" : {
+      "k" : 800,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_6_bn_output" : {
+      "k" : 448,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_4_bn_output" : {
+      "k" : 640,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_53_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_23_bn_output" : {
+      "k" : 992,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_47_output" : {
+      "k" : 672,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_3_output" : {
+      "k" : 160,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_31_output" : {
+      "k" : 672,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_19_output" : {
+      "k" : 192,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_32_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_1_4_bn_output" : {
+      "k" : 256,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "average_pooling2d_3_output" : {
+      "k" : 512,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_44_output__tmp__identity__" : {
+      "k" : 576,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_11_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_3_3_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_30_output__tmp__identity__" : {
+      "k" : 640,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_0_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_16_output__tmp__identity__" : {
+      "k" : 448,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_99_output" : {
+      "k" : 672,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_55_output__tmp__identity__" : {
+      "k" : 928,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_78_output" : {
+      "k" : 864,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_28_output" : {
+      "k" : 576,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_42_output" : {
+      "k" : 1024,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_91_output" : {
+      "k" : 544,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_1_11_bn_output" : {
+      "k" : 480,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_12_output" : {
+      "k" : 320,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_57_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_27_output__tmp__identity__" : {
+      "k" : 544,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_9_bn_output" : {
+      "k" : 416,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_70_output" : {
+      "k" : 736,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_7_output" : {
+      "k" : 160,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_3_9_bn_output" : {
+      "k" : 800,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_36_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_54_output" : {
+      "k" : 896,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_2_13_bn_output" : {
+      "k" : 672,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_106_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_120_output" : {
+      "k" : 128,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_1_output__tmp__identity__" : {
+      "k" : 96,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_2_output" : {
+      "k" : 64,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_2_output__tmp__identity__" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_3_output__tmp__identity__" : {
+      "k" : 160,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "dense_1_9_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_22_output__tmp__identity__" : {
+      "k" : 384,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_95_output" : {
+      "k" : 608,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_35_output" : {
+      "k" : 800,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_6_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_33_output__tmp__identity__" : {
+      "k" : 736,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_101_output" : {
+      "k" : 704,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_19_output__tmp__identity__" : {
+      "k" : 288,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_84_output" : {
+      "k" : 960,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_113_output" : {
+      "k" : 896,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_63_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_29_output" : {
+      "k" : 352,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_2_bn_output" : {
+      "k" : 320,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_42_output" : {
+      "k" : 288,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_1_10_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_1_11_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_0_2_bn_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_30_output" : {
+      "k" : 640,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_21_output" : {
+      "k" : 224,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_16_output" : {
+      "k" : 448,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_2_7_conv2D_output" : {
+      "k" : 32,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "final_bn_output" : {
+      "k" : 1024,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_58_output" : {
+      "k" : 1024,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_1_4_conv2D_output" : {
+      "k" : 32,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "dense_0_1_conv2D_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "activation_88_output" : {
+      "k" : 1024,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_7_bn_output" : {
+      "k" : 480,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_2_16_bn_output" : {
+      "k" : 768,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_67_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "average_pooling2d_1_output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_11_output__tmp__identity__" : {
+      "k" : 288,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "activation_80_output" : {
+      "k" : 896,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_5_bn_output" : {
+      "k" : 672,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "activation_46_output" : {
+      "k" : 352,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_50_output__tmp__identity__" : {
+      "k" : 768,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_36_output__tmp__identity__" : {
+      "k" : 832,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_39_output" : {
+      "k" : 928,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "activation_25_output" : {
+      "k" : 288,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "concatenate_53_output" : {
+      "k" : 864,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "dense_3_15_bn_output" : {
+      "k" : 992,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_23_output" : {
+      "k" : 416,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "dense_3_5_conv2D_output" : {
+      "k" : 32,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    },
+    "concatenate_47_output__tmp__identity__" : {
+      "k" : 672,
+      "w" : 7,
+      "n" : 1,
+      "h" : 7
+    }
+  }
+}

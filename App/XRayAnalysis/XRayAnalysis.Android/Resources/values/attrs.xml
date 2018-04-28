@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<resources>
+    
+    <declare-styleable name="ConditionResultView">
+        <attr name="condition_name" format="string" />
+        <attr name="condition_likelihood" format="float" />
+        <attr name="condition_likelihood_label" format="string" />
+        <attr name="condition_displayMode" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XRayDisplayView">
+        <attr name="filename" format="string" />
+        <attr name="date" format="string" />
+        <attr name="filename_label" format="string" />
+        <attr name="label_display_mode" format="enum">
+            <enum name="small" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+    </declare-styleable>
+    
+</resources>

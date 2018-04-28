@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/icon_visibility"
+        android:layout_width="@dimen/condition_result_icon_visibility_size"
+        android:layout_height="@dimen/condition_result_icon_visibility_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_condition_name"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_condition_name"
+        android:src="@drawable/ic_eye_hidden"/>
+
+    <TextView
+        android:id="@+id/txt_condition_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/icon_visibility"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_likelihood_value"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginLeft="@dimen/condition_result_icon_visibility_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/condition_result_name_text_size_large"
+        android:textColor="@color/grey"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        tools:text="Pleural Thickening"/>
+
+    <TextView
+        android:id="@+id/txt_likelihood_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/txt_condition_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_condition_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textSize="@dimen/condition_result_value_text_size_large"
+        android:textColor="@color/grey"
+        android:includeFontPadding="false"
+        tools:text="20.0%"/>
+
+    <TextView
+        android:id="@+id/txt_likelihood_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/txt_likelihood_value"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/txt_likelihood_value"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginLeft="@dimen/condition_result_label_margin_large"
+        android:textSize="@dimen/condition_result_label_text_size_large"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        tools:text="Very Likely"/>
+
+</merge>

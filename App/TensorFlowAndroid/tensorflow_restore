@@ -1,0 +1,54 @@
+#!/bin/sh
+
+##################################################################
+#                       TensorFlow Restore                       
+##################################################################
+#
+# This script ensures the tensorflow-android AAR file is present
+# in the Jars directory. It should be run before the actual build
+# of the TensorFlowAndroid project begins.
+#
+# This is the BASH version of this script for use when running
+# builds on a Mac.
+#
+# There is an equivalent Powershell script (prebuild.ps1)
+# that gets used when running builds on Windows.
+#
+##################################################################
+
+echo ""
+echo "================================================================="
+echo "TensorFlow Restore"
+echo "================================================================="
+echo ""
+
+# Constants
+TFVersion="1.5.0"
+TFPath="./Jars/tensorflow-android-$TFVersion.aar"
+TFUrl="http://central.maven.org/maven2/org/tensorflow/tensorflow-android/$TFVersion/tensorflow-android-$TFVersion.aar"
+TIMEOUT=3600 # 1 hour (in sec)
+
+# Check if the AAR already exists
+echo "---------- Checking for existing tensorflow-android AAR\n"
+
+if [ -f $TFPath ]; then
+    echo "Existing AAR found!\n"
+    exit 0
+else
+    echo "AAR not found\n"
+fi
+
+# Attempt to download the AAR
+echo "---------- Fetching tensorflow-android AAR (version $TFVersion)\n"
+
+if curl -o $TFPath -m $TIMEOUT "$TFUrl" ; then
+    echo "\nDownload Succeeded!\n"
+    exit 0
+else
+    # If the file partially downloaded, delete it
+    if [ -f $TFPath ]; then
+        rm $TFPath
+    fi
+    echo "\nDownload Failed.\n"
+    exit 1
+fi

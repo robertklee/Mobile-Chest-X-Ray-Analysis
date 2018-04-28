@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nH3-LN-xaV">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="8l6-aP-qdA">
+            <objects>
+                <viewController id="nH3-LN-xaV" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SHR-Vy-9m3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rU-FR-OHs">
+                                <rect key="frame" x="60" y="44" width="91.5" height="38.5"/>
+                                <accessibility key="accessibilityConfiguration" label="About">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-X8-RcP">
+                                <rect key="frame" x="45" y="113" width="919" height="1170"/>
+                                <connections>
+                                    <segue destination="b9V-QQ-tWt" kind="embed" id="hjV-iv-alw"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC5-8t-oye" userLabel="Version">
+                                <rect key="frame" x="477" y="1313" width="70" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KC5-8t-oye" firstAttribute="centerX" secondItem="zwI-rf-4eX" secondAttribute="centerX" id="96B-Qw-1Xq"/>
+                            <constraint firstItem="zwI-rf-4eX" firstAttribute="bottom" secondItem="KC5-8t-oye" secondAttribute="bottom" constant="32" id="CMh-TD-wgM"/>
+                            <constraint firstItem="KC5-8t-oye" firstAttribute="top" secondItem="Cde-X8-RcP" secondAttribute="bottom" constant="30" id="NlD-un-GjQ"/>
+                            <constraint firstItem="8rU-FR-OHs" firstAttribute="top" secondItem="zwI-rf-4eX" secondAttribute="top" constant="24" id="Plv-Hf-4DM"/>
+                            <constraint firstItem="Cde-X8-RcP" firstAttribute="top" secondItem="8rU-FR-OHs" secondAttribute="bottom" constant="30" id="Rdd-j0-5TA"/>
+                            <constraint firstItem="Cde-X8-RcP" firstAttribute="leading" secondItem="zwI-rf-4eX" secondAttribute="leading" constant="45" id="Sve-cU-gBP"/>
+                            <constraint firstItem="zwI-rf-4eX" firstAttribute="trailing" secondItem="Cde-X8-RcP" secondAttribute="trailing" constant="60" id="lux-Gf-4ib"/>
+                            <constraint firstItem="Cde-X8-RcP" firstAttribute="centerX" secondItem="zwI-rf-4eX" secondAttribute="centerX" id="uyb-T1-tb6"/>
+                            <constraint firstItem="8rU-FR-OHs" firstAttribute="leading" secondItem="zwI-rf-4eX" secondAttribute="leading" constant="60" id="y0R-hV-qQJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zwI-rf-4eX"/>
+                    </view>
+                    <connections>
+                        <outlet property="About" destination="8rU-FR-OHs" id="name-outlet-8rU-FR-OHs"/>
+                        <outlet property="Version" destination="KC5-8t-oye" id="name-outlet-KC5-8t-oye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUX-Uo-HzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.625" y="154.6875"/>
+        </scene>
+        <!--About Table View Controller-->
+        <scene sceneID="VEy-FJ-wdf">
+            <objects>
+                <tableViewController id="b9V-QQ-tWt" customClass="AboutTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oCg-6u-o86">
+                        <rect key="frame" x="0.0" y="0.0" width="919" height="1170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="71S-3G-D2X"/>
+                        <sections>
+                            <tableViewSection id="ZBH-Ze-iD3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" shouldIndentWhileEditing="NO" textLabel="e5W-qh-oQo" style="IBUITableViewCellStyleDefault" id="f4O-Md-Sms" userLabel="ApplicationRepo" customClass="AboutViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="919" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4O-Md-Sms" id="w98-Zg-OIo">
+                                            <rect key="frame" x="0.0" y="0.0" width="881" height="51.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="View 'Mobile Chest X-Ray Analysis' Repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="e5W-qh-oQo">
+                                                    <rect key="frame" x="20" y="0.0" width="861" height="51.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" hint="Double tap to open">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" textLabel="BZB-UD-aKm" style="IBUITableViewCellStyleDefault" id="Kw4-aN-HQD" userLabel="ModelRepo" customClass="AboutViewCell">
+                                        <rect key="frame" x="0.0" y="52" width="919" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kw4-aN-HQD" id="MEU-LC-aG9">
+                                            <rect key="frame" x="0.0" y="0.0" width="881" height="51.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="View 'Azure Chest X-Ray' Repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="BZB-UD-aKm">
+                                                    <rect key="frame" x="20" y="0.0" width="861" height="51.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" hint="Double tap to open">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="b9V-QQ-tWt" id="be2-3P-Mrc"/>
+                            <outlet property="delegate" destination="b9V-QQ-tWt" id="30f-Kn-hPv"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="ApplicationRepo" destination="f4O-Md-Sms" id="kom-Z0-SCm"/>
+                        <outlet property="ModelRepo" destination="Kw4-aN-HQD" id="c2x-Of-KaG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uk6-IE-dEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="814"/>
+        </scene>
+    </scenes>
+</document>

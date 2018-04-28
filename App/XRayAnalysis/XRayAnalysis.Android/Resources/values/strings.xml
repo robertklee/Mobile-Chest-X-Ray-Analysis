@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<resources>   
+    
+    <!-- General -->
+    <string name="app_name">Mobile Chest X-Ray Analysis</string>
+    
+    <!-- AI -->
+    <string-array name="ai_chest_conditions">
+        <!-- This order must match the order in ChestCondition.cs -->
+        <item>Atelectasis</item>
+        <item>Cardiomegaly</item>
+        <item>Effusion</item>
+        <item>Infiltration</item>
+        <item>Mass</item>
+        <item>Nodule</item>
+        <item>Pneumonia</item>
+        <item>Pneumothorax</item>
+        <item>Consolidation</item>
+        <item>Edema</item>
+        <item>Emphysema</item>
+        <item>Fibrosis</item>
+        <item>Pleural Thickening</item>
+        <item>Hernia</item>
+    </string-array>
+
+    <string-array name="ai_likelihood_labels">
+        <!-- This order must match the order in LikelihoodLabel.cs -->
+        <item>Very unlikely</item>
+        <item>Unlikely</item>
+        <item>Uncertain</item>
+        <item>Likely</item>
+        <item>Very likely</item>
+    </string-array>
+    
+    <!-- Permissions -->
+    <string name="permission_request_ext_storage_denied">Permission denied. Unable to import photo.</string>
+    <string name="permission_request_ext_storage">Access to external storage is required to import photos.</string>
+    
+    <!-- Image Input -->
+    <string name="image_input_title">Image Input</string>
+    <string name="image_input_import_image">Import Image</string>
+    <string name="image_input_import_image_desc">Select a chest x-ray image from your device to begin analysis</string>
+    <string name="image_input_camera">Take a photo</string>
+    <string name="image_input_camera_desc">Take a photo of a printed chest x-ray to begin analysis</string>
+    <string name="image_input_result_error">An unexpected error occurred with the photo picker. Please try again.</string>
+    
+    <!-- Crop -->
+    <string name="crop_title">Crop Image</string>
+    <string name="crop_result_error">An unexpected error occurred with the crop view. Please try again.</string>
+    
+    <!-- Condition Result View -->
+    <string name="condition_result_likelihood">Likelihood</string>
+    <string name="condition_result_weight">Weight</string>
+    <string name="condition_results_accessibility_action">Toggle CAM overlay</string>
+
+    <!-- Results -->
+    <string name="results_title">Results</string>
+    <string name="results_btn_see_more">See More</string>
+    <string name="results_image_label">X-Ray Image</string>
+    <string name="results_new_session">NEW SESSION</string>
+
+    <!-- Analyzing -->
+    <string name="analyzing_msg">Your image is being analyzed.</string> 
+
+    <!-- X-ray Display -->
+    <string name="xray_display_date_heading">Date</string>
+    <string name="xray_display_date_not_available">Date not available</string>
+
+    <!-- See More -->
+    <string name="see_all_btn_hide">Hide</string>
+    <string name="see_all_image_label_original">Original Image</string>
+    <string name="see_all_image_label_analyzed">Analyzed Image</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_menu_item_title">About App</string>
+    <string name="about_application_repository">View \'Mobile Chest X-Ray Analysis\' Repository</string>
+    <string name="about_model_repository">View \'Azure Chest X-Ray\' Repository</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_button_clear_data">CLEAR APPLICATION DATA</string>
+    <string name="about_success_clearing_data">Application data cleared</string>
+    <string name="about_error_clearing_data">Error when attempting to clear cache</string>
+
+    <!-- Intro -->
+    <string name="intro_model_name">ChestXRay AI model</string>
+    <string name="intro_terms_of_use">TERMS OF USE</string>
+    <string name="intro_privacy_policy">PRIVACY POLICY</string>
+    <string name="intro_welcome">Welcome to Mobile\nChest X-Ray Analysis</string>
+    <string name="intro_research_project">Mobile Chest X-Ray Analysis is a research\nproject used to showcase the <u>%1$s</u>.</string>
+    <string name="intro_intention">This model/app is not intended for clinical use and the\nperformance for clinical use has not been established.</string>
+    <string name="intro_get_started">Get Started</string>
+
+    <!-- Sharing -->
+    <string name="sharing_uri_null_error">Error occurred while sharing to application. Please try again.</string>
+
+    <!-- Camera -->
+    <string name="camera_result_error">An unexpected error occurred with the Camera. Please try again.</string>
+    
+</resources>

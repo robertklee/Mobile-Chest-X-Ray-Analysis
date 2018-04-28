@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConditionViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="cxk-wN-pdQ" customClass="ConditionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pneumothorax" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1833">
+                        <rect key="frame" x="73" y="0.0" width="168" height="69.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" red="0.43919116258621216" green="0.43923261761665344" blue="0.43915662169456482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1834">
+                        <rect key="frame" x="266" y="14" width="98" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="40.4%" lineBreakMode="clip" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1835">
+                                <rect key="frame" x="0.0" y="0.0" width="98" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.43919116258621216" green="0.43923261761665344" blue="0.43915662169456482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likelihood" lineBreakMode="clip" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1836">
+                                <rect key="frame" x="0.0" y="24" width="98" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.43919116258621216" green="0.43923261761665344" blue="0.43915662169456482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1836" firstAttribute="top" secondItem="1835" secondAttribute="bottom" id="aJD-Ft-mSP"/>
+                        </constraints>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-hide" translatesAutoresizingMaskIntoConstraints="NO" id="1840">
+                        <rect key="frame" x="25" y="23.5" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="1841"/>
+                            <constraint firstAttribute="height" constant="23" id="riy-6T-d3s"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.94897001981735229" green="0.9490540623664856" blue="0.94889980554580688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="1834" firstAttribute="leading" secondItem="1833" secondAttribute="trailing" constant="25" id="41s-LH-lpB"/>
+                    <constraint firstAttribute="trailing" secondItem="1834" secondAttribute="trailing" constant="20" id="64W-SS-nvt"/>
+                    <constraint firstItem="1834" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="MWl-Jz-r2A"/>
+                    <constraint firstItem="1840" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="25" id="PoB-68-S7j"/>
+                    <constraint firstItem="1834" firstAttribute="width" secondItem="YTl-1W-gDM" secondAttribute="width" multiplier="98:384" id="d3N-Vq-TKb"/>
+                    <constraint firstItem="1840" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="eWa-aI-in1"/>
+                    <constraint firstItem="1833" firstAttribute="leading" secondItem="1840" secondAttribute="trailing" constant="25" id="jyv-4M-VbJ"/>
+                    <constraint firstItem="1833" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="ne0-xb-4M1"/>
+                    <constraint firstItem="1833" firstAttribute="height" secondItem="YTl-1W-gDM" secondAttribute="height" multiplier="1:1" id="zIE-nZ-tbQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" hint="Double tap to toggle CAM overlay">
+                <accessibilityTraits key="traits" button="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="ConditionLabel" destination="1833" id="name-outlet-1833"/>
+                <outlet property="EyeImage" destination="1840" id="name-outlet-1840"/>
+                <outlet property="LikelihoodLabel" destination="1835" id="name-outlet-1835"/>
+                <outlet property="LikelihoodTextLabel" destination="1836" id="name-outlet-1836"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye-hide" width="25" height="15"/>
+    </resources>
+</document>

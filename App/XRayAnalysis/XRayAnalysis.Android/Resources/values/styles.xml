@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<resources>
+
+    <!-- App Theme -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+    
+    <!-- Splash Screen -->
+    <style name="AppTheme.Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="AppTheme.ToolbarBase">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="AppTheme.ToolbarBase">
+        <!-- Customizations can be added here -->
+    </style>
+
+    <style name="AppTheme.Toolbar.Theme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/pale_grey</item>
+    </style>
+
+    <!-- Analysis -->
+    <style name="AppTheme.Analysis" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_gradients</item>
+    </style>
+
+    <!-- Image Input -->
+    <style name="TwoButtonsActionLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintVertical_chainStyle">spread</item>
+        <item name="android:layout_marginLeft">@dimen/two_buttons_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/two_buttons_button_margin</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="TwoButtonsActionSelectLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+    <style name="TwoButtonsActionImage">
+        <item name="android:layout_width">@dimen/two_buttons_action_image_width</item>
+        <item name="android:layout_height">@dimen/two_buttons_action_image_height</item>
+    </style>
+   <style name="TwoButtonsActionTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/two_buttons_action_title_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/two_buttons_action_title_bottom_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/two_buttons_action_title_text</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TwoButtonsActionSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">@dimen/two_buttons_action_content_width</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/two_buttons_action_subtitle_text</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="ResultsButton">
+        <item name="android:layout_width">@dimen/results_btn_size</item>
+        <item name="android:layout_height">@dimen/results_btn_size</item>
+        <item name="android:layout_margin">@dimen/results_btn_margin</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ResultsButtonSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/results_btn_bar_sep_thickness</item>
+        <item name="android:layout_marginLeft">@dimen/results_btn_bar_sep_margin</item>
+        <item name="android:layout_marginRight">@dimen/results_btn_bar_sep_margin</item>
+        <item name="android:background">@color/results_btn_bar_sep</item>
+    </style>
+
+    <!-- X-ray Display -->
+    <style name="XRayDisplayTextContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingLeft">@dimen/xray_display_horiz_padding</item>
+        <item name="android:paddingRight">@dimen/xray_display_horiz_padding</item>
+    </style>
+    
+    <style name="XRayDisplayHeadingLarge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/xray_display_heading_text_size_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="XRayDisplayLarge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/xray_display_text_size_large</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+   <!-- About -->
+    <style name="AboutTextButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/about_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">roboto_medium</item>
+    </style>
+
+    <style name="AboutIcons">
+        <item name="android:layout_width">@dimen/about_icon_size</item>
+        <item name="android:layout_height">@dimen/about_icon_size</item>
+    </style>
+
+    <style name="AboutDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/about_description_text_padding</item>
+        <item name="android:paddingRight">@dimen/about_description_text_padding</item>
+        <item name="android:textSize">@dimen/about_text_size</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AboutBottomText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/about_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">roboto_medium</item>
+    </style>
+
+    <style name="AboutLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/about_layout_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.PrimaryActionButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:colorButtonNormal">@color/purple</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/about_button_padding</item>
+        <item name="android:paddingRight">@dimen/about_button_padding</item>
+    </style>
+    
+</resources>

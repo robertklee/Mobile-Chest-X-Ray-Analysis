@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="358">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Analysis View Controller-->
+        <scene sceneID="357">
+            <objects>
+                <viewController storyboardIdentifier="AnalysisVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="358" customClass="AnalysisViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="359">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-colours" translatesAutoresizingMaskIntoConstraints="NO" id="vm7-Yj-RV7">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="1346"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="M4Q-OR-UaK">
+                                <rect key="frame" x="485" y="620.5" width="54" height="70.5"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your image is being analyzed." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uK7-SZ-6ZT">
+                                <rect key="frame" x="384.5" y="711" width="256.5" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="Your image is being analyzed.">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vm7-Yj-RV7" firstAttribute="trailing" secondItem="Btk-MC-Y7z" secondAttribute="trailing" id="73m-7Z-kCP"/>
+                            <constraint firstItem="uK7-SZ-6ZT" firstAttribute="top" secondItem="M4Q-OR-UaK" secondAttribute="bottom" constant="20" id="97v-ec-Rmm"/>
+                            <constraint firstItem="vm7-Yj-RV7" firstAttribute="bottom" secondItem="Btk-MC-Y7z" secondAttribute="bottom" id="Goj-wi-5yc"/>
+                            <constraint firstItem="vm7-Yj-RV7" firstAttribute="leading" secondItem="Btk-MC-Y7z" secondAttribute="leading" id="Im6-Kp-Of0"/>
+                            <constraint firstItem="uK7-SZ-6ZT" firstAttribute="centerX" secondItem="Btk-MC-Y7z" secondAttribute="centerX" id="T1B-6H-zpc"/>
+                            <constraint firstItem="M4Q-OR-UaK" firstAttribute="width" secondItem="vm7-Yj-RV7" secondAttribute="width" multiplier="5:96" id="TJd-8q-SM4"/>
+                            <constraint firstItem="uK7-SZ-6ZT" firstAttribute="centerY" secondItem="Btk-MC-Y7z" secondAttribute="centerY" constant="30" id="XPO-t7-6e4"/>
+                            <constraint firstItem="vm7-Yj-RV7" firstAttribute="top" secondItem="Btk-MC-Y7z" secondAttribute="top" id="fnN-91-Xef"/>
+                            <constraint firstItem="M4Q-OR-UaK" firstAttribute="centerX" secondItem="Btk-MC-Y7z" secondAttribute="centerX" id="ktx-nV-Faf"/>
+                            <constraint firstItem="M4Q-OR-UaK" firstAttribute="height" secondItem="vm7-Yj-RV7" secondAttribute="height" multiplier="5:96" id="q9x-0o-rUd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Btk-MC-Y7z"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="yR7-IN-o1b"/>
+                    <connections>
+                        <outlet property="AnalyzingIndicator" destination="M4Q-OR-UaK" id="name-outlet-M4Q-OR-UaK"/>
+                        <outlet property="AnalyzingLabel" destination="uK7-SZ-6ZT" id="name-outlet-uK7-SZ-6ZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="360" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703.125" y="79.062960000000004"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-colours" width="1536" height="1920"/>
+    </resources>
+</document>

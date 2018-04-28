@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Copyright (c) Microsoft Corporation. All rights reserved.
+     Licensed under the MIT License. -->
+
+<resources>
+
+    <!-- General -->
+    <dimen name="btn_size">48dp</dimen>
+    
+    <!-- Splash Screen -->
+    <dimen name="splash_logo_offset">75dp</dimen>
+    <dimen name="splash_text_offset">100dp</dimen>
+    
+    <!-- Image Input -->
+    <dimen name="two_buttons_action_image_width">120dp</dimen>
+    <dimen name="two_buttons_action_image_height">105dp</dimen>
+    <dimen name="two_buttons_action_content_width">230dp</dimen>
+    <dimen name="two_buttons_action_title_top_margin">12dp</dimen>
+    <dimen name="two_buttons_action_title_bottom_margin">6dp</dimen>
+    <dimen name="two_buttons_bottom_bar_height">98dp</dimen>
+    <dimen name="two_buttons_action_subtitle_text">14sp</dimen>
+    <dimen name="two_buttons_action_title_text">26sp</dimen>
+    <dimen name="two_buttons_button_margin">10dp</dimen>
+    <dimen name="two_buttons_card_view_radius">4dp</dimen>
+    <dimen name="two_buttons_button_shadow_radius">3dp</dimen>
+     <dimen name="two_buttons_button_margin">10dp</dimen>
+    <dimen name="two_buttons_button_middle_margin">5dp</dimen>
+
+    <!-- Condition Result View -->
+    <dimen name="condition_result_icon_visibility_size">23dp</dimen>
+    <dimen name="condition_result_icon_visibility_margin">25dp</dimen>
+
+    <dimen name="condition_result_name_right_gap">15dp</dimen>
+    <dimen name="condition_result_label_min_width">75sp</dimen> <!-- NOTE: Need to use sp here so that it scales as the font size scales -->
+    <dimen name="condition_result_label_margin_large">8dp</dimen>
+
+    <dimen name="condition_result_name_text_size">16sp</dimen>
+    <dimen name="condition_result_name_text_size_large">28sp</dimen>
+    <dimen name="condition_result_label_text_size">12sp</dimen>
+    <dimen name="condition_result_label_text_size_large">18sp</dimen>
+    <dimen name="condition_result_value_text_size">24sp</dimen>
+    <dimen name="condition_result_value_text_size_large">32sp</dimen>
+
+    <!-- Results -->
+    <dimen name="results_horiz_padding">10dp</dimen>
+
+    <dimen name="results_show_all_size">48dp</dimen>
+    <dimen name="results_info_bar_size">50dp</dimen>
+    <dimen name="results_element_border_thickness">0.5dp</dimen>
+
+    <dimen name="results_btn_bar_width">83dp</dimen>
+    <dimen name="results_btn_size">48dp</dimen>
+    <dimen name="results_btn_margin">16dp</dimen>
+    <dimen name="results_btn_bar_sep_margin">10dp</dimen>
+    <dimen name="results_btn_bar_sep_thickness">2.5dp</dimen>
+
+    <dimen name="results_condition_result_height">75dp</dimen>
+    <dimen name="results_condition_result_height_large">150dp</dimen>
+    <dimen name="results_condition_result_height_large_with_border">151dp</dimen>
+
+    <!-- Analysing -->
+    <dimen name="analyzing_msg_text_size">20sp</dimen>
+    <dimen name="analyzing_msg_top_margin">10dp</dimen>
+    <dimen name="analyzing_progress_circle_bottom_margin">10dp</dimen>
+
+    <!-- X-ray display -->
+    <dimen name="xray_display_heading_text_size">14sp</dimen>
+    <dimen name="xray_display_heading_text_size_large">21sp</dimen>
+    <dimen name="xray_display_text_size">10sp</dimen>
+    <dimen name="xray_display_text_size_large">15sp</dimen>
+
+    <dimen name="xray_display_horiz_padding">25dp</dimen>
+
+    <!-- See More -->
+    <dimen name="see_more_bar_height">36dp</dimen>
+
+   <!-- About -->
+    <dimen name="about_icon_size">24dp</dimen>
+    <dimen name="about_icon_left_margin">24dp</dimen>
+    <dimen name="about_text_left_margin">32dp</dimen>
+    <dimen name="about_text_size">14sp</dimen>
+    <dimen name="about_description_bottom_margin">13dp</dimen>
+    <dimen name="about_description_width">555dp</dimen>
+    <dimen name="about_description_text_padding">75dp</dimen>
+    <dimen name="about_location_bottom_margin">60dp</dimen>
+    <dimen name="about_clear_button_bottom_margin">50dp</dimen>
+    <dimen name="about_bottom_text_bottom_margin">30dp</dimen>
+    <dimen name="about_clear_button_width">205dp</dimen>
+    <dimen name="about_clear_button_height">36dp</dimen>
+    <dimen name="about_layout_width">240dp</dimen>
+    <dimen name="about_layout_height">55dp</dimen>
+    <dimen name="about_button_padding">18dp</dimen>
+
+    <!-- Intro -->
+    <dimen name="intro_research_top_margin">20dp</dimen>
+    <dimen name="intro_intention_top_margin">70dp</dimen>
+    <dimen name="intro_get_started_top_margin">100dp</dimen>
+    <dimen name="intro_bottom_bar_top_margin">190dp</dimen>
+    <dimen name="intro_welcome_text_size">36sp</dimen>
+    <dimen name="intro_research_text_size">20sp</dimen>
+    <dimen name="intro_intention_text_size">16sp</dimen>
+    <dimen name="intro_get_started_text_size">14sp</dimen>
+    <dimen name="intro_bottom_bar_text_size">16sp</dimen>
+    <dimen name="intro_button_width">120dp</dimen>
+    <dimen name="intro_button_height">36dp</dimen>
+    <dimen name="intro_bottom_bar_height">86dp</dimen>
+    
+</resources>

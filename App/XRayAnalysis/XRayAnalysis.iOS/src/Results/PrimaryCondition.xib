@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConditionViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="cxk-wN-pdQ" customClass="ConditionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-hide" translatesAutoresizingMaskIntoConstraints="NO" id="ct1-WM-1u0">
+                        <rect key="frame" x="25" y="24" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="Fo3-BI-C0Y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pleural Thickening" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4g-C0-0fr">
+                        <rect key="frame" x="73" y="0.5" width="307" height="70"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="86.3%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eE-yY-cOw">
+                        <rect key="frame" x="73" y="50" width="75.5" height="31.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Very Likely" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBS-1d-KaM">
+                        <rect key="frame" x="163.5" y="53.5" width="93.5" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F4g-C0-0fr" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" multiplier="0.7" id="2pe-My-t7F"/>
+                    <constraint firstAttribute="bottom" secondItem="ct1-WM-1u0" secondAttribute="bottom" constant="53" id="66a-3L-FuN"/>
+                    <constraint firstItem="F4g-C0-0fr" firstAttribute="width" secondItem="YTl-1W-gDM" secondAttribute="width" multiplier="0.8" id="BjR-PQ-eJX"/>
+                    <constraint firstItem="F4g-C0-0fr" firstAttribute="leading" secondItem="ct1-WM-1u0" secondAttribute="trailing" constant="25" id="JO0-3Z-YoY"/>
+                    <constraint firstItem="8eE-yY-cOw" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" multiplier="1.3" id="U9R-AK-Cj2"/>
+                    <constraint firstItem="CBS-1d-KaM" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" multiplier="1.3" id="ZT7-g0-Xd2"/>
+                    <constraint firstItem="ct1-WM-1u0" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="25" id="fKb-6L-LAP"/>
+                    <constraint firstItem="ct1-WM-1u0" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" multiplier="0.7" constant="1" id="kQ5-uT-Fii"/>
+                    <constraint firstItem="8eE-yY-cOw" firstAttribute="leading" secondItem="F4g-C0-0fr" secondAttribute="leading" id="rol-zc-ZbY"/>
+                    <constraint firstItem="CBS-1d-KaM" firstAttribute="leading" secondItem="8eE-yY-cOw" secondAttribute="trailing" constant="15" id="ry5-IT-rkf"/>
+                    <constraint firstItem="F4g-C0-0fr" firstAttribute="height" secondItem="YTl-1W-gDM" secondAttribute="height" multiplier="0.7" id="u0z-kB-aR9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" hint="Double tap to toggle CAM overlay">
+                <accessibilityTraits key="traits" button="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="ConditionLabel" destination="F4g-C0-0fr" id="name-outlet-F4g-C0-0fr"/>
+                <outlet property="EyeImage" destination="ct1-WM-1u0" id="name-outlet-ct1-WM-1u0"/>
+                <outlet property="LikelihoodLabel" destination="8eE-yY-cOw" id="name-outlet-8eE-yY-cOw"/>
+                <outlet property="LikelihoodTextLabel" destination="CBS-1d-KaM" id="name-outlet-CBS-1d-KaM"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="117.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye-hide" width="25" height="15"/>
+    </resources>
+</document>
